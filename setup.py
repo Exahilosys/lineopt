@@ -6,7 +6,7 @@ with open('README.rst') as file:
 
 name = 'lineopt'
 
-version = '0.0.3'
+version = '0.0.4'
 
 author = 'Exahilosys'
 

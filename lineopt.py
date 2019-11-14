@@ -161,14 +161,14 @@ class State(dict):
 
         return (names, argument)
 
-    def analyse(self, content, apply = tuple):
+    def analyse(self, content, apply = None):
 
         """
         | Parse ``content`` and find the respective ``invoke``.
         | ``flags`` found against it will be used to parse the ``argument``.
         """
 
-        (names, argument) = self.parse(content, apply)
+        (names, argument) = self.parse(content, apply or tuple)
 
         invoke = self.trail(*names) if names else None
 

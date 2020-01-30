@@ -6,7 +6,7 @@ with open('README.rst') as file:
 
 name = 'lineopt'
 
-version = '0.0.4'
+version = '0.1.0'
 
 author = 'Exahilosys'
 
@@ -16,16 +16,8 @@ setuptools.setup(
     name = name,
     version = version,
     url = url,
-    py_modules = [name],
+    packages = setuptools.find_packages(),
     license = 'MIT',
     description = 'Command line based invoke framework.',
-    long_description = readme,
-    install_requires = [
-        'flagopt'
-    ],
-    extras_require = {
-        'docs': [
-            'sphinx'
-        ]
-    }
+    long_description = readme
 )

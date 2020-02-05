@@ -3,7 +3,7 @@ Installing
 
 .. code-block:: bash
 
-  pip3 install throttle
+  pip3 install lineopt
 
 Usage
 =====
